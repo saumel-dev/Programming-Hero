@@ -1,9 +1,119 @@
-*{
+/* *{
     padding: 0;
     margin: 0;
-}
+} */
 
 .font {
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
+}
+/* shared styles */
+.display-flex{
+    display: flex;
+}
+.text-primary{
+    color: #FF900E;
+}
+.text-gray{
+    color: #424242;
+}
+.text-light-gray{
+    color: #727272;
+}
+.bg-light{
+    background-color: rgba(255, 144, 14, 0.1);
+}
+.btn-primary{
+    color: white;
+    background-color: #FF900E;
+    border: none;
+    padding: 20px 25px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-radius: 8px;
+}
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+main > section{
+    margin-top: 130px;
+}
+/* header styles */
+
+/* navbar styles */
+.navbar{
+    justify-content: space-between;
+    /* padding: 20px; */
+    align-items: center;
+}
+.logo{
+    font-weight: 700;
+    font-size: 3rem;
+}
+.nav-items{
+    list-style: none;
+    margin-right: 30px;
+}
+.nav-links{
+    text-decoration: none;
+    font-weight: 500;
+}
+.navbar, .banner{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+/* banner related style */
+.banner-content{
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.banner-title{
+    font-weight: 700;
+    font-size: 4rem;
+}
+.banner-image{
+    width: 100%;
+}
+/* team and features related style */
+.teams{
+    align-items: center;
+}
+.team-img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+.our-features{
+    margin-left: 130px;
+    max-width: 530px;
+}
+.section-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+#quick-list{
+    font-weight: 500;
+}
+@media screen and (max-width: 576px){
+    .navbar, .nav-links, .teams{
+        flex-direction: column;
+    }
+    .team-img-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .our-features{
+        margin-left: 20px;
+    }
+}
+/* medium size device */
+@media screen and (min-width:576px) and (max-width:992px){
+    .teams{
+        flex-direction: column;
+    }
+    .our-features{
+        margin-left: 50px auto;
+    }
 }
