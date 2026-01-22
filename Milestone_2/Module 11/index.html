@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro To Talwind CSS</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <h1 class="underline text-2xl">Intro to Tailwind</h1>
+    <h3>Exploring CSS via utility class</h3>
+    <p>This is exiting</p>
+    <p class="text-center bg-red-600">I am exploring tailwind</p>
+    <!-- responsive section -->
+    <section class="bg-red-300 md:bg-green-500 lg:bg-yellow-500">
+        <h3>My Responsive Section</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore architecto eveniet esse recusandae doloremque velit minima veniam vero possimus inventore placeat, et enim ipsa error aliquid atque, fugiat eos ipsam!</p>
+    </section>
+    <!-- flex layout -->
+     <section class="lg:flex justify-content">
+        <div class="w-96 h-32  text-3xl bg-purple-400 border border-4 border-red-900">Item 1</div>
+        <div class="w-96 h-32  text-3xl bg-purple-400 border border-4 border-red-900">Item 2</div>
+        <div class="w-96 h-32  text-3xl bg-purple-400 border border-4 border-red-900">Item 3</div>
+     </section>
+     <section class="flex justify-between">
+        <div class="w-24 h-24  text-3xl bg-purple-400 border border-4 border-red-900">Item 4</div>
+        <div class="w-24 h-24  text-3xl bg-purple-400 border border-4 border-red-900">Item 5</div>
+        <div class="w-24 h-24  text-3xl bg-purple-400 border border-4 border-red-900">Item 6</div>
+     </section>
+     <!-- grid section -->
+     <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-2 gap-y-8">
+        <div class="bg-pink-300 text-2xl">box-1</div>
+        <div class="bg-pink-300 text-2xl">box-2</div>
+        <div class="bg-pink-300 text-2xl">box-3</div>
+        <div class="bg-pink-300 text-2xl">box-4</div>
+        <div class="bg-pink-300 text-2xl">box-5</div>
+        <div class="bg-pink-300 text-2xl">box-6</div>
+        <div class="bg-pink-300 text-2xl">box-7</div>
+        <div class="bg-pink-300 text-2xl">box-8</div>
+     </section>
+
+     <section>
+        <h3 class="text-2xl ">Some text</h3>
+     </section>
+</body>
+
+</html>

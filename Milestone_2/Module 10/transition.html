@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: peachpuff;
+            border: 2px solid tomato;
+            /* transition: width 5s linear 3s, background-color 5s ease-in 2s; */
+            transition: transform 1s;
+        }
+        .box:hover{
+            transform:  scale(1.5) translateX(150px);
+            /* width: 200px;
+            /* property name - duration -  easing fuction - delay */
+            background-color: red; */
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Transform</li>
+        <li>Translation</li>
+        <li>Transition</li>
+    </ul>
+    <div class="box">Box</div>
+    <div class="box">Box</div>
+    <div class="box">Box</div>
+</body>
+</html>
