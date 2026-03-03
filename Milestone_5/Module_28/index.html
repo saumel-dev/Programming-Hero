@@ -4,10 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #post-container{
+            width: 90%;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .post-card{
+            border: 1px solid black;
+            box-shadow: 1px 1px 1px 1px blue;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .post-card h2{
+            font-size: 24px;
+            color: blue;
+        }
+    </style>
 </head>
 <body>
     <button onclick="toggle()">click me</button>
     <button onclick="loadpost()">Load Post</button>
-    <script src="json.js"></script>
+    <!-- <script src="json.js"></script> -->
+    <div id="post-container">
+        
+    </div>
+    <script src="post.js"></script>
 </body>
 </html>
