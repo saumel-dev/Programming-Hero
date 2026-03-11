@@ -1,0 +1,29 @@
+<!-- 
+Task 3:
+Adapt image for different device
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 3</title>
+    <style>
+        .ig img{
+            width: 80%;
+        }
+        @media screen and (max-width:500px) and (min-width:0px) {
+            .ig img{
+                width: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="ig">
+            <img src="/img/stone.jpeg" alt="">
+        </div>
+    </div>
+</body>
+</html>

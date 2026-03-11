@@ -1,0 +1,41 @@
+<!-- 
+Task 1:
+Design a responsive flex layout
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+    <style>
+        .container{
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        .box1{
+            border: 2px solid red;
+            width: 100px;
+        }
+        .box2{
+            border: 2px solid blue;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">
+            <h2>left</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="box2">
+            <h2>right</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum eaque praesentium, mollitia rerum vel voluptatibus temporibus magnam vero aliquid minus expedita dignissimos! Fuga nostrum, harum recusandae tenetur blanditiis explicabo officiis!</p>
+        </div>
+    </div>
+</body>
+</html>
