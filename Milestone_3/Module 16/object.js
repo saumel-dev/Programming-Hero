@@ -1,5 +1,7 @@
-const str = {
-    name: "hello",
-    age: 30
+var numbers = ['Tom', 'Tim', 'Tin', 'Tik'];
+let s = [];
+for(let n of numbers)
+{
+    s += n;
 }
-console.log(str.he)
+console.log(typeof s);
