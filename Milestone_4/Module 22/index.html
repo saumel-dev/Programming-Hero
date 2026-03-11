@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exploring DOM</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <style>
+        h1 {
+            color: gold;
+        }
+        #food-title{
+            color: green;
+        }
+        .food .foreign{
+            font-weight: 900;
+        }
+        .bg-red{
+            background-color: red;
+        }
+        .bold{
+            font-weight: 700;
+        }
+        .big{
+            font-size: 3em;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>This is my header no banner</h1>
+        </header>
+        <section id="old-dhaka" class="songs">
+            <h1>Welcome to <span>my</span> DOM</h1>
+            <p>Lorem ipsum dolor <span>sit amet</span> consectetur adipisicing elit. Modi cumque laboriosam tempora nesciunt sequi mollitia <span>expedita</span> saepe iste explicabo. Quae.</p>
+            <ul>
+                <li>Shafayet</li>
+                <li>Bonobash</li>
+                <li id="band-name">Jalali Set</li>
+                <li>Dom de re baba</li>
+            </ul>
+        </section>
+        <section class="food">
+            <h1 id="food-title">Foods I love</h1>
+            <ul>
+                <li>rice</li>
+                <li>potato</li>
+                <li>fish</li>
+                <li>lentils</li>
+                <li class="foreign">burger</li>
+                <li class="foreign">pizza</li>
+                <li class="foreign">pasta</li>
+            </ul>
+        </section>
+        <section id="players-container">
+            <h1>Players</h1>
+            <ul>
+                <li>Messi</li>
+                <li>pele</li>
+                <li>Ronaldo</li>
+                <li>Emabpe</li>
+                <!-- <li>chele</li> -->
+            </ul>
+        </section>
+    </main>
+    <script>
+        // console.log("Document Object Model");
+        const student = {
+            name: 'abul mia',
+            id: 121,
+            study: function (subject) {
+                // console.log('studying subject: ', subject);
+            }
+        }
+        // document.getElementsByTagName
+        const licollection = document.getElementsByTagName('li');
+        console.log(licollection);
+        for (const li of licollection) {
+            // console.log(li.innerText);
+        }
+
+        // all h1 tags
+        const allheadings = document.getElementsByTagName('h1');
+        for (const h1 of allheadings) {
+            // console.log(h1.innerText);
+        }
+        const foodtitleh1 = document.getElementById('food-title');
+        // console.log(foodtitleh1.innerText);
+
+        foodtitleh1.innerText = 'foods i love to eat';
+
+        const bandelement = document.getElementById('band-name');
+        bandelement.innerText = 'jalali sleeping band';
+
+        // get element by class name
+        const foreignelements = document.getElementsByClassName('foreign');
+        console.log(foreignelements);
+        for(const element of foreignelements)
+        {
+            // console.log(element.innerText);
+        }
+        // query selector all
+        const spanElements = document.querySelectorAll('#old-dhaka p span');
+        for(const span of spanElements)
+        {
+            // console.log(span.innerText);
+        }
+    </script>
+    <script src="/scripts/hello.js"></script>
+</body>
+
+</html>
