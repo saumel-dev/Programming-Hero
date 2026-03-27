@@ -1,35 +1,24 @@
-// // export default function Todo({task, isDOne}) {
-// //     return (
-// //         <li>Task: {task} </li>
-// //     )
-// // }
-
-// export default function Todo ({task, isDone, time = 0}){
-//         if(isDone){
-//             return <li>Done: {task} Duration: {time}</li>
-//         }
-//         else {
-//             return <li>Do now: {task}</li>
-//         }
+// export default function ToDo({task, isDone}) {
+//     return(
+//         <>
+//         <li>task: {task}</li>
+//         </>
+//     )
 // }
-// conditional rendering: 3 ternary
-// export default function Todo({ task, isDone, time = 0 }) {
-//     return isDone ? <li>Done: {task} Duration: {time}</li> : <li>Not done: {task}</li>
+// export default function ToDo({task, isDone}) {
+//     if(isDone){
+//         return <li>Done: {task}</li>
+//     }
+//     else
+//         return <li>Do Now: {task}</li>
 // }
-// conditional rendering: 4 && operatior
-// export default function Todo({ task, isDone, time = 0 }) {
-//     return isDone && <li>Done task: {task} time: {time}</li>
+// export default function ToDo({task, isDone, time = 0}) {
+//     if(isDone){
+//         return <li>Done: {task} Duration: {time}</li>
+//     }
+//     return <li>To be done: {task}</li>
 // }
-// export default function Todo({ task, isDone, time = 0 }) {
-//     return isDone || <li>Not Done task: {task} time: {time}</li>
-// }
-
-// conditional rendering 6 using variable
-export default function Todo ({task, isDone, time = 0}){
-        let listItem;
-        if(isDone){
-        }
-        else {
-            return <li>Do now: {task}</li>
-        }
+export default function Todo({task, isDone, time = 0})
+{
+    return isDone? <li>Done {task} duration {time}</li> : <li>Not done: {task}</li>
 }
