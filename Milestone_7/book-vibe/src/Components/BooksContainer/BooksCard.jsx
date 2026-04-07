@@ -13,6 +13,7 @@ const BooksCard = ({ book }) => {
                         src={image}
                         alt={bookName} />
                 </figure>
+                
                 <div className='flex gap-5 pl-6'>
                     {
                         tags.map((tag, index) => <div key={index} className="badge bg-green-100 font-bold text-green-400">{tag}</div>)
