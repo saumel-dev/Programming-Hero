@@ -7,6 +7,7 @@ import Home from './Pages/Home/Home.jsx'
 import BookDetails from './Pages/BookDetails/BookDetails.jsx'
 import ListedBook from './Pages/ListedBook/ListedBook.jsx'
 import PTR from './Pages/PagestoRead/PTR.jsx'
+import BookContextProvider from './Context/BookContextProvider.jsx'
 
 const router = createBrowserRouter([
   {
@@ -30,7 +31,9 @@ const router = createBrowserRouter([
 ])
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router}>
-    </RouterProvider>
+    <BookContextProvider>
+      <RouterProvider router={router}>
+      </RouterProvider>
+    </BookContextProvider>
   </StrictMode>,
 )

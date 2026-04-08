@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { CiStar } from 'react-icons/ci';
 import { Link } from 'react-router';
+import { BookContext } from '../../Context/BookContextProvider';
 
 const BooksCard = ({ book }) => {
     const { bookId, bookName, author, image, category, tags, rating } = book;
-
+    
     return (
         <Link to={`/books/${bookId}`}>
             <div className="card bg-base-100 w-90 h-auto shadow-sm rounded-xl">
@@ -13,7 +14,6 @@ const BooksCard = ({ book }) => {
                         src={image}
                         alt={bookName} />
                 </figure>
-                
                 <div className='flex gap-5 pl-6'>
                     {
                         tags.map((tag, index) => <div key={index} className="badge bg-green-100 font-bold text-green-400">{tag}</div>)
