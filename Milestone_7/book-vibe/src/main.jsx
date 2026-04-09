@@ -8,20 +8,31 @@ import BookDetails from './Pages/BookDetails/BookDetails.jsx'
 import ListedBook from './Pages/ListedBook/ListedBook.jsx'
 import PTR from './Pages/PagestoRead/PTR.jsx'
 import BookContextProvider from './Context/BookContextProvider.jsx'
+import ReadList from './ReadList/ReadList.jsx'
+import WishList from './WishList/WishList.jsx'
 
 const router = createBrowserRouter([
   {
     path: '/',
     Component: Root,
     children: [
-      { index: true, Component: Home },
+      {
+        index: true,
+        Component: Home
+      },
       {
         path: "/books/:id",
         loader: () => fetch('/public/booksData.json'),
         Component: BookDetails
       },
-      { path: "/listedbook", Component: ListedBook },
-      { path: "/toread", Component: PTR }
+      {
+        path: "/listedbook",
+        Component: ListedBook
+      },
+      {
+        path: "/toread",
+        Component: PTR
+      },
     ]
   },
   {
