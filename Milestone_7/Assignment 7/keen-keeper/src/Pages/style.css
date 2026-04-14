@@ -1,0 +1,13 @@
+.green {
+    color: #244D3F;
+}
+.active {
+    background-color: #244D3F;
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5px 15px;
+    color: white;
+}

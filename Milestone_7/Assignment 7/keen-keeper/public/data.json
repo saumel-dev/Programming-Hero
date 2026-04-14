@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "name": "David Kim",
+        "picture": "https://i.pravatar.cc/150?img=11",
+        "email": "david.kim@email.com",
+        "days_since_contact": 5,
+        "status": "on-track",
+        "tags": [
+            "work",
+            "college"
+        ],
+        "bio": "Met in college. Now colleagues at the same firm. Love discussing tech and playing chess.",
+        "goal": 7,
+        "next_due_date": "2026-04-18"
+    },
+    {
+        "id": 2,
+        "name": "Emma Wilson",
+        "picture": "https://i.pravatar.cc/150?img=5",
+        "email": "emma.wilson@email.com",
+        "days_since_contact": 62,
+        "status": "overdue",
+        "tags": [
+            "family",
+            "work"
+        ],
+        "bio": "Known each other since childhood. Emma is always the one to plan get-togethers.",
+        "goal": 30,
+        "next_due_date": "2026-02-27"
+    },
+    {
+        "id": 3,
+        "name": "Lisa Nakamura",
+        "picture": "https://i.pravatar.cc/150?img=9",
+        "email": "lisa.nakamura@email.com",
+        "days_since_contact": 10,
+        "status": "almost due",
+        "tags": [
+            "college",
+            "travel"
+        ],
+        "bio": "Travel buddy from a backpacking trip across Southeast Asia. Always up for adventure.",
+        "goal": 14,
+        "next_due_date": "2026-04-20"
+    },
+    {
+        "id": 4,
+        "name": "James Wright",
+        "picture": "https://i.pravatar.cc/150?img=15",
+        "email": "james.wright@email.com",
+        "days_since_contact": 3,
+        "status": "on-track",
+        "tags": [
+            "hobby",
+            "travel"
+        ],
+        "bio": "Met at a photography workshop. We often go on weekend photo walks together.",
+        "goal": 10,
+        "next_due_date": "2026-04-21"
+    },
+    {
+        "id": 5,
+        "name": "Sarah Chen",
+        "picture": "https://i.pravatar.cc/150?img=47",
+        "email": "sarah.chen@email.com",
+        "days_since_contact": 18,
+        "status": "overdue",
+        "tags": [
+            "college",
+            "close friend"
+        ],
+        "bio": "Best friend from university. We talk about everything from life goals to favorite recipes.",
+        "goal": 14,
+        "next_due_date": "2026-04-05"
+    },
+    {
+        "id": 6,
+        "name": "Marcus Johnson",
+        "picture": "https://i.pravatar.cc/150?img=52",
+        "email": "marcus.johnson@email.com",
+        "days_since_contact": 7,
+        "status": "almost due",
+        "tags": [
+            "work",
+            "gym"
+        ],
+        "bio": "Gym partner turned close friend. Motivates me to stay consistent with fitness.",
+        "goal": 10,
+        "next_due_date": "2026-04-17"
+    },
+    {
+        "id": 7,
+        "name": "Olivia Martinez",
+        "picture": "https://i.pravatar.cc/150?img=44",
+        "email": "olivia.martinez@email.com",
+        "days_since_contact": 21,
+        "status": "overdue",
+        "tags": [
+            "family",
+            "close friend"
+        ],
+        "bio": "Cousin and close confidant. We grew up together and still talk every few weeks.",
+        "goal": 14,
+        "next_due_date": "2026-04-01"
+    },
+    {
+        "id": 8,
+        "name": "Ryan O'Brien",
+        "picture": "https://i.pravatar.cc/150?img=68",
+        "email": "ryan.obrien@email.com",
+        "days_since_contact": 4,
+        "status": "on-track",
+        "tags": [
+            "hobby",
+            "college"
+        ],
+        "bio": "Fellow book club member. We share reading lists and meet monthly for discussions.",
+        "goal": 7,
+        "next_due_date": "2026-04-19"
+    }
+]
