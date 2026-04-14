@@ -5,11 +5,8 @@
         "picture": "https://i.pravatar.cc/150?img=11",
         "email": "david.kim@email.com",
         "days_since_contact": 5,
-        "status": "on-track",
-        "tags": [
-            "work",
-            "college"
-        ],
+        "status": "On-Track",
+        "tags": ["work", "college"],
         "bio": "Met in college. Now colleagues at the same firm. Love discussing tech and playing chess.",
         "goal": 7,
         "next_due_date": "2026-04-18"
@@ -20,11 +17,8 @@
         "picture": "https://i.pravatar.cc/150?img=5",
         "email": "emma.wilson@email.com",
         "days_since_contact": 62,
-        "status": "overdue",
-        "tags": [
-            "family",
-            "work"
-        ],
+        "status": "Overdue",
+        "tags": ["family", "work"],
         "bio": "Known each other since childhood. Emma is always the one to plan get-togethers.",
         "goal": 30,
         "next_due_date": "2026-02-27"
@@ -35,11 +29,8 @@
         "picture": "https://i.pravatar.cc/150?img=9",
         "email": "lisa.nakamura@email.com",
         "days_since_contact": 10,
-        "status": "almost due",
-        "tags": [
-            "college",
-            "travel"
-        ],
+        "status": "Almost Due",
+        "tags": ["college", "travel"],
         "bio": "Travel buddy from a backpacking trip across Southeast Asia. Always up for adventure.",
         "goal": 14,
         "next_due_date": "2026-04-20"
@@ -50,11 +41,8 @@
         "picture": "https://i.pravatar.cc/150?img=15",
         "email": "james.wright@email.com",
         "days_since_contact": 3,
-        "status": "on-track",
-        "tags": [
-            "hobby",
-            "travel"
-        ],
+        "status": "On-Track",
+        "tags": ["hobby", "travel"],
         "bio": "Met at a photography workshop. We often go on weekend photo walks together.",
         "goal": 10,
         "next_due_date": "2026-04-21"
@@ -65,11 +53,8 @@
         "picture": "https://i.pravatar.cc/150?img=47",
         "email": "sarah.chen@email.com",
         "days_since_contact": 18,
-        "status": "overdue",
-        "tags": [
-            "college",
-            "close friend"
-        ],
+        "status": "Overdue",
+        "tags": ["college", "close friend"],
         "bio": "Best friend from university. We talk about everything from life goals to favorite recipes.",
         "goal": 14,
         "next_due_date": "2026-04-05"
@@ -80,11 +65,8 @@
         "picture": "https://i.pravatar.cc/150?img=52",
         "email": "marcus.johnson@email.com",
         "days_since_contact": 7,
-        "status": "almost due",
-        "tags": [
-            "work",
-            "gym"
-        ],
+        "status": "Almost Due",
+        "tags": ["work", "gym"],
         "bio": "Gym partner turned close friend. Motivates me to stay consistent with fitness.",
         "goal": 10,
         "next_due_date": "2026-04-17"
@@ -95,11 +77,8 @@
         "picture": "https://i.pravatar.cc/150?img=44",
         "email": "olivia.martinez@email.com",
         "days_since_contact": 21,
-        "status": "overdue",
-        "tags": [
-            "family",
-            "close friend"
-        ],
+        "status": "Overdue",
+        "tags": ["family", "close friend"],
         "bio": "Cousin and close confidant. We grew up together and still talk every few weeks.",
         "goal": 14,
         "next_due_date": "2026-04-01"
@@ -110,13 +89,109 @@
         "picture": "https://i.pravatar.cc/150?img=68",
         "email": "ryan.obrien@email.com",
         "days_since_contact": 4,
-        "status": "on-track",
-        "tags": [
-            "hobby",
-            "college"
-        ],
+        "status": "On-Track",
+        "tags": ["hobby", "college"],
         "bio": "Fellow book club member. We share reading lists and meet monthly for discussions.",
         "goal": 7,
         "next_due_date": "2026-04-19"
+    },
+    {
+        "id": 9,
+        "name": "Sophia Rossi",
+        "picture": "https://i.pravatar.cc/150?img=32",
+        "email": "sophia.rossi@email.com",
+        "days_since_contact": 2,
+        "status": "On-Track",
+        "tags": ["work", "close friend"],
+        "bio": "Former mentor who became a dear friend. She has the best advice on career growth.",
+        "goal": 30,
+        "next_due_date": "2026-05-12"
+    },
+    {
+        "id": 10,
+        "name": "Liam Henderson",
+        "picture": "https://i.pravatar.cc/150?img=12",
+        "email": "liam.h@email.com",
+        "days_since_contact": 45,
+        "status": "Overdue",
+        "tags": ["hobby", "gym"],
+        "bio": "Met through a local cycling club. We used to ride every weekend.",
+        "goal": 21,
+        "next_due_date": "2026-03-12"
+    },
+    {
+        "id": 11,
+        "name": "Aisha Khan",
+        "picture": "https://i.pravatar.cc/150?img=26",
+        "email": "aisha.k@email.com",
+        "days_since_contact": 12,
+        "status": "Almost Due",
+        "tags": ["college", "work"],
+        "bio": "Brilliant software engineer. We collaborate on open-source projects occasionally.",
+        "goal": 14,
+        "next_due_date": "2026-04-16"
+    },
+    {
+        "id": 12,
+        "name": "Daniel Park",
+        "picture": "https://i.pravatar.cc/150?img=13",
+        "email": "dan.park@email.com",
+        "days_since_contact": 1,
+        "status": "On-Track",
+        "tags": ["family"],
+        "bio": "My younger brother. We try to catch up daily, even if it's just a quick text.",
+        "goal": 2,
+        "next_due_date": "2026-04-15"
+    },
+    {
+        "id": 13,
+        "name": "Chloe Bennett",
+        "picture": "https://i.pravatar.cc/150?img=41",
+        "email": "chloe.b@email.com",
+        "days_since_contact": 8,
+        "status": "On-Track",
+        "tags": ["travel", "hobby"],
+        "bio": "Met in a cooking class in Italy. We still exchange regional recipes via email.",
+        "goal": 30,
+        "next_due_date": "2026-05-06"
+    },
+    {
+        "id": 14,
+        "name": "Victor Hugo",
+        "picture": "https://i.pravatar.cc/150?img=53",
+        "email": "vhugo@email.com",
+        "days_since_contact": 25,
+        "status": "Overdue",
+        "tags": ["work"],
+        "bio": "Industry contact from a conference last year. Great source of market insights.",
+        "goal": 15,
+        "next_due_date": "2026-04-04"
+    },
+    {
+        "id": 15,
+        "name": "Maya Patel",
+        "picture": "https://i.pravatar.cc/150?img=23",
+        "email": "maya.patel@email.com",
+        "days_since_contact": 6,
+        "status": "Almost Due",
+        "tags": ["close friend", "gym"],
+        "bio": "Yoga instructor and life-long friend. Keeps me grounded and centered.",
+        "goal": 7,
+        "next_due_date": "2026-04-15"
+    },
+    {
+        "id": 16,
+        "name": "Elena Rodriguez",
+        "picture": "https://i.pravatar.cc/150?img=31",
+        "email": "elena.rod@email.com",
+        "days_since_contact": 0,
+        "status": "On-Track",
+        "tags": [
+            "hobby",
+            "close friend"
+        ],
+        "bio": "Local community garden partner. We share tips on urban farming and sustainable living.",
+        "goal": 14,
+        "next_due_date": "2026-04-28"
     }
 ]

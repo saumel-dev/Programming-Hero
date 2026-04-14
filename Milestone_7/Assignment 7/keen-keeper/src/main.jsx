@@ -5,16 +5,29 @@ import { createBrowserRouter, RouterProvider } from 'react-router'
 import Root from './Root/Root'
 import Timeline from './Pages/Timeline'
 import Stats from './Pages/Stats'
+import Home from './Pages/Home'
 
 const router = createBrowserRouter([
   {
     path: '/',
     Component: Root,
     children: [
-      {path: "/timeline", Component: <Timeline></Timeline>},
-      {path: "/stats", Component: <Stats></Stats>}
+      {
+        index: true,
+        loader: () => fetch('/public/data.json'),
+        Component: Home
+      },
+      {
+        path: "/timeline",
+        Component: Timeline
+      },
+      {
+        path: "/stats",
+        Component: Stats
+      }
     ]
-  }
+  },
+
 ])
 createRoot(document.getElementById('root')).render(
   <StrictMode>
