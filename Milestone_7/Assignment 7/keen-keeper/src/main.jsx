@@ -6,6 +6,7 @@ import Root from './Root/Root'
 import Timeline from './Pages/Timeline'
 import Stats from './Pages/Stats'
 import Home from './Pages/Home'
+import FriendsDetails from './Pages/FriendsDetails'
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,11 @@ const router = createBrowserRouter([
       {
         path: "/stats",
         Component: Stats
+      },
+      {
+        path: "/friend/:id",
+         loader: () => fetch('/public/data.json'),
+         Component: FriendsDetails
       }
     ]
   },
