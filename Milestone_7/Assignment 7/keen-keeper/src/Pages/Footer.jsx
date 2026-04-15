@@ -5,7 +5,7 @@ import instagram from './../assets/instagram.png'
 import twitter from './../assets/twitter.png'
 const Footer = () => {
     return (
-        <div className='green-bg'>
+        <div className='green-bg flex'>
             <div className='container mx-auto'>
                 <div className='text-center text-white pt-20 space-y-4'>
                     <h1 className='text-7xl font-bold'>KeenKeeper</h1>
