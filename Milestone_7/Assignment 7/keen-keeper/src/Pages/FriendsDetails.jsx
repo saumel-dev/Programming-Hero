@@ -6,6 +6,7 @@ import PhonecallIcon from './../assets/Phonecall.png'
 import textIcon from './../assets/text.png'
 import videoIcon from './../assets/video.png'
 import { friendsContext } from '../Context/ContextProvider';
+import { toast } from 'react-toastify';
 const FriendsDetails = () => {
     const { id } = useParams();
     const friend = useLoaderData();
@@ -23,6 +24,21 @@ const FriendsDetails = () => {
         setText,
         video,
         setVideo } = useContext(friendsContext);
+    const HandleUpdate = (type) => {
+        if (type === 'call') {
+            toast.success(`Call with ${name}`);
+            setCall([...call, filteredFriend]);
+        }
+        else if (type === 'text') {
+            toast.success(`Text with ${name}`);
+            setText([...text, filteredFriend]);
+        }
+        else if (type === 'video') {
+            toast.success(`Video with ${name}`);
+            setVideo([...video, filteredFriend]);
+        }
+        console.log(call);
+    }
     return (
         <div className='container mx-auto my-20'>
             <div className='flex flex-row justify-center gap-5'>
@@ -81,17 +97,17 @@ const FriendsDetails = () => {
                                 </div>
                                 <div className='flex justify-around mt-5'>
                                     <div>
-                                        <button className='hover:-translate-y-2 transition-all btn w-35 h-20 text-[18px] flex flex-col'>
+                                        <button onClick={() => HandleUpdate('call')} className='hover:-translate-y-2 transition-all btn w-35 h-20 text-[18px] flex flex-col'>
                                             <img src={PhonecallIcon} className='w-8' alt="" />
                                             Call</button>
                                     </div>
                                     <div>
-                                        <button className='hover:-translate-y-2 transition-all btn w-35 h-20 text-[18px] flex flex-col'>
+                                        <button onClick={() => HandleUpdate('text')} className='hover:-translate-y-2 transition-all btn w-35 h-20 text-[18px] flex flex-col'>
                                             <img src={textIcon} className='w-8' alt="" />
                                             Text</button>
                                     </div>
                                     <div>
-                                        <button className='hover:-translate-y-2 transition-all btn w-35 h-20 text-[18px] flex flex-col'>
+                                        <button onClick={() => HandleUpdate('video')} className='hover:-translate-y-2 transition-all btn w-35 h-20 text-[18px] flex flex-col'>
                                             <img src={videoIcon} className='w-8' alt="" />
                                             Video</button>
                                     </div>

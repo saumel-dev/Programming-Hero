@@ -4,7 +4,7 @@ const ContextProvider = ({ children }) => {
     const [call, setCall] = useState([]);
     const [text, setText] = useState([]);
     const [video, setVideo] = useState([]);
-    const value = {
+    const data = {
         call,
         setCall,
         text,
@@ -13,7 +13,7 @@ const ContextProvider = ({ children }) => {
         setVideo
     }
     return (
-        <friendsContext.Provider value={value}>
+        <friendsContext.Provider value={data}>
             {children}
         </friendsContext.Provider>
     );
