@@ -1,20 +1,28 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { useLoaderData, useParams } from 'react-router';
 import { LuBellRing, LuFileArchive } from 'react-icons/lu';
 import { MdOutlineDeleteForever } from 'react-icons/md';
-import Phonecall from './../assets/Phonecall.png'
-import text from './../assets/text.png'
-import video from './../assets/video.png'
+import PhonecallIcon from './../assets/Phonecall.png'
+import textIcon from './../assets/text.png'
+import videoIcon from './../assets/video.png'
+import { friendsContext } from '../Context/ContextProvider';
 const FriendsDetails = () => {
     const { id } = useParams();
     const friend = useLoaderData();
-    const filteredFriend = friend.filter(friend => friend.id == id)
+    const filteredFriend = friend.find(friend => friend.id == id)
     const { name, picture, status, tags,
         next_due_date, bio, goal, days_since_contact
-    } = filteredFriend[0];
+    } = filteredFriend;
     const statusStyle = status == 'On-Track' ? 'bg-[#244D3c] text-white font-bold' :
         status == 'Overdue' ? 'bg-red-500 text-white font-bold' :
-            status == 'Almost Due' ? 'bg-yellow-400 text-[#244D3F] text-white font-bold' : '';
+            status == 'Almost Due' ? 'bg-yellow-400 text-white font-bold' : '';
+
+    const { call,
+        setCall,
+        text,
+        setText,
+        video,
+        setVideo } = useContext(friendsContext);
     return (
         <div className='container mx-auto my-20'>
             <div className='flex flex-row justify-center gap-5'>
@@ -74,17 +82,17 @@ const FriendsDetails = () => {
                                 <div className='flex justify-around mt-5'>
                                     <div>
                                         <button className='hover:-translate-y-2 transition-all btn w-35 h-20 text-[18px] flex flex-col'>
-                                            <img src={Phonecall} className='w-8' alt="" />
+                                            <img src={PhonecallIcon} className='w-8' alt="" />
                                             Call</button>
                                     </div>
                                     <div>
                                         <button className='hover:-translate-y-2 transition-all btn w-35 h-20 text-[18px] flex flex-col'>
-                                            <img src={text} className='w-8' alt="" />
+                                            <img src={textIcon} className='w-8' alt="" />
                                             Text</button>
                                     </div>
                                     <div>
                                         <button className='hover:-translate-y-2 transition-all btn w-35 h-20 text-[18px] flex flex-col'>
-                                            <img src={video} className='w-8' alt="" />
+                                            <img src={videoIcon} className='w-8' alt="" />
                                             Video</button>
                                     </div>
                                 </div>
