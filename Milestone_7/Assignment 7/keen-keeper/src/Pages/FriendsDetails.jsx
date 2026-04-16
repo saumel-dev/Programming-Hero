@@ -34,13 +34,16 @@ const FriendsDetails = () => {
             toast.success(`Video with ${name}`);
             setVideo([...video, filteredFriend]);
         }
+        console.log(type);
+        
         setAllbtn([...allBtn, filteredFriend]);
     }
+ 
     return (
         <div className='container mx-auto my-20'>
-            <div className='flex flex-row justify-center gap-5'>
+            <div className='flex flex-col md:flex-row justify-center gap-5'>
                 <div>
-                    <div className='flex flex-col space-y-3'>
+                    <div className='flex flex-col items-center md:items-start space-y-3'>
                         <div className='shadow-[0_0_15px_rgba(0,0,0,0.1)] rounded-md flex flex-col items-center w-70 space-y-2 py-4 px-5'>
                             <img className='w-15 rounded-full' src={picture} alt="" />
                             <p className='font-bold'>{name}</p>
@@ -61,7 +64,7 @@ const FriendsDetails = () => {
                     </div>
                 </div>
                 <div className='space-y-5'>
-                    <div className='grid grid-cols-3 gap-10'>
+                    <div className='flex flex-wrap justify-center gap-5'>
                         <div className='w-50 h-30 justify-center items-center flex flex-col shadow-[0_0_15px_rgba(0,0,0,0.1)] rounded-md'>
                             <h1 className='text-[#244D3F] text-3xl font-bold'>{days_since_contact}</h1>
                             <p className='text-[#64748B]'>Days Since Contact</p>
@@ -75,7 +78,7 @@ const FriendsDetails = () => {
                             <p className='text-[#64748B]'>Next Due</p>
                         </div>
                     </div>
-                    <div>
+                    <div className='mx-5 md:mx-0'>
                         <div className="card w-full bg-base-100 card-sm shadow-sm">
                             <div className="card-body shadow-[0_0_15px_rgba(0,0,0,0.1)]">
                                 <div className="flex justify-between card-actions">
@@ -86,7 +89,7 @@ const FriendsDetails = () => {
                             </div>
                         </div>
                     </div>
-                    <div>
+                    <div className='mx-5 md:mx-0'>
                         <div className="card w-full bg-base-100 card-sm shadow-[0_0_15px_rgba(0,0,0,0.1)]">
                             <div className="card-body">
                                 <div className="card-actions">
