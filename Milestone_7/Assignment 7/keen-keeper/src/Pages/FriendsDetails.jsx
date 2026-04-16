@@ -10,20 +10,17 @@ import { toast } from 'react-toastify';
 const FriendsDetails = () => {
     const { id } = useParams();
     const friend = useLoaderData();
+    
     const filteredFriend = friend.find(friend => friend.id == id)
     const { name, picture, status, tags,
         next_due_date, bio, goal, days_since_contact
     } = filteredFriend;
+
     const statusStyle = status == 'On-Track' ? 'bg-[#244D3c] text-white font-bold' :
         status == 'Overdue' ? 'bg-red-500 text-white font-bold' :
             status == 'Almost Due' ? 'bg-yellow-400 text-white font-bold' : '';
 
-    const { call,
-        setCall,
-        text,
-        setText,
-        video,
-        setVideo } = useContext(friendsContext);
+    const { call, setCall, text, setText, video, setVideo, allBtn, setAllbtn } = useContext(friendsContext);
     const HandleUpdate = (type) => {
         if (type === 'call') {
             toast.success(`Call with ${name}`);
@@ -37,7 +34,7 @@ const FriendsDetails = () => {
             toast.success(`Video with ${name}`);
             setVideo([...video, filteredFriend]);
         }
-        console.log(call);
+        setAllbtn([...allBtn, filteredFriend]);
     }
     return (
         <div className='container mx-auto my-20'>
