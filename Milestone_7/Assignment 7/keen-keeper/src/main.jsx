@@ -7,6 +7,7 @@ import Timeline from './Pages/Timeline'
 import Stats from './Pages/Stats'
 import Home from './Pages/Home'
 import FriendsDetails from './Pages/FriendsDetails'
+import Error from './Pages/Error'
 
 const router = createBrowserRouter([
   {
@@ -15,7 +16,7 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        loader: () => fetch('/public/data.json'),
+        loader: () => fetch('/data.json'),
         Component: Home
       },
       {
@@ -28,11 +29,16 @@ const router = createBrowserRouter([
       },
       {
         path: "/friend/:id",
-         loader: () => fetch('/public/data.json'),
+         loader: () => fetch('/data.json'),
          Component: FriendsDetails
       }
-    ]
+    ],
   },
+  {
+    path: "*",
+    Component: Error
+  }
+
 
 ])
 createRoot(document.getElementById('root')).render(

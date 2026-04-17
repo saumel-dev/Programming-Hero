@@ -5,12 +5,15 @@ import { MdOutlineDeleteForever } from 'react-icons/md';
 import PhonecallIcon from './../assets/Phonecall.png'
 import textIcon from './../assets/text.png'
 import videoIcon from './../assets/video.png'
+import iconCall from './../assets/Iconcall.png'
+import iconVideo from './../assets/Iconvideo.png'
+import iconText from './../assets/Icontext.png'
 import { friendsContext } from '../Context/ContextProvider';
 import { toast } from 'react-toastify';
 const FriendsDetails = () => {
     const { id } = useParams();
     const friend = useLoaderData();
-    
+
     const filteredFriend = friend.find(friend => friend.id == id)
     const { name, picture, status, tags,
         next_due_date, bio, goal, days_since_contact
@@ -22,28 +25,40 @@ const FriendsDetails = () => {
 
     const { call, setCall, text, setText, video, setVideo, allBtn, setAllbtn } = useContext(friendsContext);
     const HandleUpdate = (type) => {
-        if (type === 'call') {
+        const icon = {
+            'Call': iconCall,
+            'Text': iconText,
+            'Video': iconVideo
+        }
+        const dateFormate = new Date().toLocaleDateString('en-US', {
+        month: 'long',
+        day: 'numeric',
+        year: 'numeric'
+    });
+        const updatedFriend = { ...filteredFriend, type: type, icon: icon[type], date: dateFormate }
+        if (type === 'Call') {
             toast.success(`Call with ${name}`);
-            setCall([...call, filteredFriend]);
+            setCall([...call, updatedFriend]);
         }
-        else if (type === 'text') {
+        else if (type === 'Text') {
             toast.success(`Text with ${name}`);
-            setText([...text, filteredFriend]);
+            setText([...text, updatedFriend]);
         }
-        else if (type === 'video') {
+        else if (type === 'Video') {
             toast.success(`Video with ${name}`);
-            setVideo([...video, filteredFriend]);
+            setVideo([...video, updatedFriend]);
         }
-        console.log(type);
+
+        setAllbtn([...allBtn, updatedFriend]);
+        console.log(updatedFriend);
         
-        setAllbtn([...allBtn, filteredFriend]);
     }
- 
+
     return (
         <div className='container mx-auto my-20'>
             <div className='flex flex-col md:flex-row justify-center gap-5'>
                 <div>
-                    <div className='flex flex-col items-center md:items-start space-y-3'>
+                    <div className='flex flex-col items-center space-y-3'>
                         <div className='shadow-[0_0_15px_rgba(0,0,0,0.1)] rounded-md flex flex-col items-center w-70 space-y-2 py-4 px-5'>
                             <img className='w-15 rounded-full' src={picture} alt="" />
                             <p className='font-bold'>{name}</p>
@@ -56,10 +71,10 @@ const FriendsDetails = () => {
                             <p className='text-[#64748B] text-[12px]'>{bio}</p>
                             <p className='text-[#64748B] text-[10px]'>Preferred: email</p>
                         </div>
-                        <div className='flex flex-col items-start space-y-3'>
-                            <button className='hover:-translate-y-1 transition-all flex items-center justify-center gap-2 font-semibold cursor-pointer w-full h-10 px-4 py-1 shadow-[0_0_15px_rgba(0,0,0,0.1)] rounded-md'><LuBellRing className='pt-0.5'></LuBellRing>Snooze 2 weeks</button>
-                            <button className='hover:-translate-y-1 transition-all flex items-center justify-center gap-2 font-semibold cursor-pointer w-full h-10 px-4 py-1 shadow-[0_0_15px_rgba(0,0,0,0.1)] rounded-md'><LuFileArchive></LuFileArchive>Archive</button>
-                            <button className='hover:-translate-y-1 transition-all flex text-red-500 items-center justify-center gap-2 font-semibold cursor-pointer w-full h-10 px-4 py-1 shadow-[0_0_15px_rgba(0,0,0,0.1)] rounded-md'><MdOutlineDeleteForever></MdOutlineDeleteForever>Delete</button>
+                        <div className='flex flex-col space-y-3 w-70'>
+                            <button className='hover:-translate-y-1 transition-all flex items-center justify-center gap-2 font-semibold cursor-pointer h-10 shadow-[0_0_15px_rgba(0,0,0,0.1)] rounded-md'><LuBellRing className='pt-0.5'></LuBellRing>Snooze 2 weeks</button>
+                            <button className='hover:-translate-y-1 transition-all flex items-center justify-center gap-2 font-semibold cursor-pointer h-10 shadow-[0_0_15px_rgba(0,0,0,0.1)] rounded-md'><LuFileArchive></LuFileArchive>Archive</button>
+                            <button className='hover:-translate-y-1 transition-all flex text-red-500 items-center justify-center gap-2 font-semibold cursor-pointer h-10 shadow-[0_0_15px_rgba(0,0,0,0.1)] rounded-md'><MdOutlineDeleteForever></MdOutlineDeleteForever>Delete</button>
                         </div>
                     </div>
                 </div>
@@ -97,17 +112,17 @@ const FriendsDetails = () => {
                                 </div>
                                 <div className='flex justify-around mt-5'>
                                     <div>
-                                        <button onClick={() => HandleUpdate('call')} className='hover:-translate-y-2 transition-all btn w-35 h-20 text-[18px] flex flex-col'>
+                                        <button onClick={() => HandleUpdate('Call')} className='hover:-translate-y-2 transition-all btn w-35 h-20 text-[18px] flex flex-col'>
                                             <img src={PhonecallIcon} className='w-8' alt="" />
                                             Call</button>
                                     </div>
                                     <div>
-                                        <button onClick={() => HandleUpdate('text')} className='hover:-translate-y-2 transition-all btn w-35 h-20 text-[18px] flex flex-col'>
+                                        <button onClick={() => HandleUpdate('Text')} className='hover:-translate-y-2 transition-all btn w-35 h-20 text-[18px] flex flex-col'>
                                             <img src={textIcon} className='w-8' alt="" />
                                             Text</button>
                                     </div>
                                     <div>
-                                        <button onClick={() => HandleUpdate('video')} className='hover:-translate-y-2 transition-all btn w-35 h-20 text-[18px] flex flex-col'>
+                                        <button onClick={() => HandleUpdate('Video')} className='hover:-translate-y-2 transition-all btn w-35 h-20 text-[18px] flex flex-col'>
                                             <img src={videoIcon} className='w-8' alt="" />
                                             Video</button>
                                     </div>

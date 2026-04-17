@@ -15,7 +15,6 @@ const Root = () => {
                 <Footer></Footer>
             </div>
             <ToastContainer position='top-center'>
-
             </ToastContainer>
         </ContextProvider>
     );

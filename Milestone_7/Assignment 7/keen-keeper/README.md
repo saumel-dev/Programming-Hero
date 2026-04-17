@@ -1,16 +1,22 @@
-# React + Vite
+KeenKeeper
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+KeenKeeper is a relationship management app that helps you stay intentionally connected with the people who matter in your life. Log interactions, track history, and visualize your connection habits — all in one place.
 
-Currently, two official plugins are available:
+Technologies Used
+React — Component-based UI
+React Router — Client-side routing & data loading
+Tailwind CSS — Utility-first styling
+Recharts — Interactive pie chart for stats
+React Icons — Icon library
+React Toastify — Toast notifications
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+✨ Key Features
+👥 Friend Cards
+Browse all your connections on the home page. Each card shows the friend's name, profile picture, tags, days since last contact, and current relationship status (On-Track, Almost Due, or Overdue).
+📋 Interaction Timeline
+Select a friend and log an interaction — Call, Text, or Video. Every interaction is saved to a timeline that gives you a full history of how you've been staying in touch.
+📊 Stats & Insights
+Visit the Stats page to see a visual breakdown of all your interactions via a pie chart, showing how many Calls, Texts, and Videos you've made.
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🚀 Live Demo
+🔗 keen-keeper-saumel-dev.netlify.app
