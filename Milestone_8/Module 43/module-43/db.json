@@ -1,0 +1,96 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Wireless mouse",
+      "category": "Electronics",
+      "price": 20.00,
+      "inStock": true,
+      "rating": 4.5,
+      "image": "https://images.unsplash.com/photo-1518444065439-e933c06ce9cd",
+      "description": "Over-ear noise-cancelling headphones with 20 hours battery life"
+    },
+    {
+      "id": 2,
+      "name": "Smart Fitness Watch",
+      "category": "Wearables",
+      "price": 89.99,
+      "inStock": true,
+      "rating": 4.2,
+      "image": "https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b",
+      "description": "Track heart rate, steps, sleep, and workouts with a sleek design"
+    },
+    {
+      "id": 3,
+      "name": "Gaming Mouse RGB",
+      "category": "Accessories",
+      "price": 29.99,
+      "inStock": false,
+      "rating": 4.7,
+      "image": "https://images.unsplash.com/photo-1587202372775-e229f172b9d7",
+      "description": "High precision gaming mouse with customizable RGB lighting"
+    },
+    {
+      "id": 4,
+      "name": "Mechanical Keyboard",
+      "category": "Accessories",
+      "price": 74.99,
+      "inStock": true,
+      "rating": 4.6,
+      "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8",
+      "description": "Compact mechanical keyboard with blue switches for tactile feedback"
+    },
+    {
+      "id": 5,
+      "name": "4K Ultra HD Monitor",
+      "category": "Electronics",
+      "price": 299.99,
+      "inStock": true,
+      "rating": 4.4,
+      "image": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf",
+      "description": "27-inch 4K UHD display with HDR support and ultra-thin bezels"
+    }
+  ],
+  "books": [
+    {
+      "id": 1,
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "published_year": 1960,
+      "genre": "Fiction",
+      "rating": 4.8
+    },
+    {
+      "id": 2,
+      "title": "1984",
+      "author": "George Orwell",
+      "published_year": 1949,
+      "genre": "Dystopian",
+      "rating": 4.7
+    },
+    {
+      "id": 3,
+      "title": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "published_year": 1925,
+      "genre": "Classic",
+      "rating": 4.5
+    },
+    {
+      "id": 4,
+      "title": "The Hobbit",
+      "author": "J.R.R. Tolkien",
+      "published_year": 1937,
+      "genre": "Fantasy",
+      "rating": 4.9
+    },
+    {
+      "id": 5,
+      "title": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "published_year": 1813,
+      "genre": "Romance",
+      "rating": 4.6
+    }
+  ]
+}
