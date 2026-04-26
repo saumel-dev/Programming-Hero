@@ -11,7 +11,6 @@ const BooksPage = async () => {
                 {
                     books.map(book => <BooksCard key={book.id} book={book}></BooksCard>)
                 }
-
             </div>
         </div>
     );
