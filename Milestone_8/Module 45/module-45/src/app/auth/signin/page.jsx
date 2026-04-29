@@ -3,49 +3,26 @@ import React from 'react';
 import { Check } from "@gravity-ui/icons";
 import { Button, Description, FieldError, Form, Input, Label, TextField } from "@heroui/react";
 import { authClient } from '@/lib/auth-client';
-const SignUpPage = () => {
 
+const SignInPage = () => {
     const onSubmit = async (e) => {
         e.preventDefault();
         const formData = new FormData(e.currentTarget);
         const userData = Object.fromEntries(formData.entries());
-        // console.log(data);
-        const { data, error } = await authClient.signUp.email({
-            name: userData.name,
+        console.log('form submitted with: ', formData);
+        
+        const {data, error} = await authClient.signIn.email({
             email: userData.email,
             password: userData.password,
+            rememberMe: true,
             callbackURL: '/'
         })
-        if(error)
-        {
-            alert('Error signing up: ' + error.message)
-        }
-        else
-        {
-            alert('sign up successfully')
-        }
-        console.log('signup resonse', data, error);
-    };
-
+        console.log('Sign in response: ', data, error);
+    }
     return (
         <div>
-            <h2>Please Sign Up</h2>
+            <h2>Please Sign In</h2>
             <Form className="flex w-96 flex-col gap-4" onSubmit={onSubmit}>
-                {/* name */}
-                <TextField
-                    isRequired
-                    name="name"
-                    validate={(value) => {
-                        if (value.length < 3) {
-                            return "Name must be at least 3 characters";
-                        }
-                        return null;
-                    }}
-                >
-                    <Label>User Name</Label>
-                    <Input name='name' placeholder="Jhon Doe" />
-                    <FieldError />
-                </TextField>
                 {/* email */}
                 <TextField
                     isRequired
@@ -100,4 +77,4 @@ const SignUpPage = () => {
     );
 };
 
-export default SignUpPage;
+export default SignInPage;
