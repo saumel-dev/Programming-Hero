@@ -6,7 +6,7 @@ import { FaBookmark, FaEye } from 'react-icons/fa';
 import { IoMdShare } from 'react-icons/io';
 
 const NewsCard = ({ news }) => {
-    console.log(news);
+    // console.log(news);
 
     return (
         <div>
@@ -18,7 +18,7 @@ const NewsCard = ({ news }) => {
                                 src={news.author?.img}
                                 width={30}
                                 height={30}
-                                alt={news.author?.name}
+                                alt={news.author?.name || 'author'}
                                 className='rounded-full'
                             ></Image>
                             <h2 className='font-semibold'>{news.author?.name}</h2>

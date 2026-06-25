@@ -20,7 +20,7 @@ const PagebyCategory = async ({ params }) => {
     const { id } = await params;
     const categories = await GetCategories();
   const news = await GetNewsByCategoryId(id);
-    console.log(news);
+    // console.log(news);   
 
     return (
         <div className="container grid my-15 mx-auto grid-cols-12 gap-4">

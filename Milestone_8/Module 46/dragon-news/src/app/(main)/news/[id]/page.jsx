@@ -18,7 +18,7 @@ export const generateMetaData = async ({ params }) => {
 const NewsDetailsPage = async ({ params }) => {
     const { id } = await params;
     const news = await getNewsDetailsById(id);
-    console.log(news);
+    // console.log(news);
 
     return (
         <div className='max-w-5xl mx-auto my-8 card'>
@@ -29,7 +29,7 @@ const NewsDetailsPage = async ({ params }) => {
                             src={news.author?.img}
                             width={30}
                             height={30}
-                            alt={news.author?.name}
+                            alt={news.author?.name || 'author'}
                             className='rounded-full'
                         ></Image>
                         <h2 className='font-semibold'>{news.author?.name}</h2>

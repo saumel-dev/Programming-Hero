@@ -1,0 +1,48 @@
+[   
+    {
+        "id": 1,
+        "name": "Basic Access",
+        "price": 30,
+        "popular": true,
+        "description": "Ideal for self-motivated individuals who just need the right tools to train.",
+        "features": [
+            "Access to gym floor 5 AM - 10 PM",
+            "Standard cardio and weight equipment",
+            "Basic locker room access",
+            "1 Complimentary fitness assessment",
+            "Mobile app access for check-ins",
+            "Free high-speed guest Wi-Fi",
+            "Access to water filtration stations"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Fitness Pro",
+        "price": 65,
+        "description": "The perfect balance of independent training and guided group energy.",
+        "features": [
+            "24/7 Unlimited gym access",
+            "All group fitness classes included",
+            "Access to sauna and steam room",
+            "2 Guest passes per month",
+            "Discounts on protein shakes and gear",
+            "Monthly body composition analysis (InBody)",
+            "Dedicated stretching & mobility zone"
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Elite Performance",
+        "price": 120,
+        "description": "A comprehensive results-driven plan for those serious about their transformation.",
+        "features": [
+            "All Fitness Pro features",
+            "2 Personal training sessions per month",
+            "Customized nutrition and meal plans",
+            "Complimentary towel and laundry service",
+            "Priority booking for high-demand classes",
+            "Access to VIP recovery lounge & cryotherapy",
+            "Quarterly blood-work consultation"
+        ]
+    }
+]

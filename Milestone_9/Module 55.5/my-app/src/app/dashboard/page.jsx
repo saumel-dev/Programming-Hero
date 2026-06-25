@@ -2,9 +2,18 @@
 import React, { useState } from 'react';
 // import HeavyChart from '../Components/HeavyChart';
 import dynamic from 'next/dynamic';
+
+
+
 const HeavyChart = dynamic(() => import('../Components/HeavyChart'), {
     loading: () => <p>Loading....</p>
 })
+
+
+const BarCharts = dynamic(() => import('../Components/Charts').then((mod) => mod.BarChart));
+const LineCharts = dynamic(() => import('../Components/Charts').then((mod) => mod.LineChart));
+const PieCharts = dynamic(() => import('../Components/Charts').then((mod) => mod.PieChart));
+
 const Dashboard = () => {
     const [showChart, setShowChart] = useState(false);
     return (
@@ -14,6 +23,9 @@ const Dashboard = () => {
             {
                 showChart && <HeavyChart></HeavyChart>
             }
+            <BarCharts/>
+            <LineCharts/>
+            <PieCharts/>
         </div>
     );
 };

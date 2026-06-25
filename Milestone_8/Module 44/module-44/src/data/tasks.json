@@ -1,0 +1,72 @@
+[
+    {
+        "id": "1",
+        "title": "Finish project report",
+        "description": "Complete the final draft of the quarterly project report and submit it for review.",
+        "status": "in_progress",
+        "priority": "high",
+        "dueDate": "2026-04-30",
+        "assignedTo": "Alice",
+        "tags": [
+            "work",
+            "report"
+        ],
+        "createdAt": "2026-04-25T10:00:00Z"
+    },
+    {
+        "id": "2",
+        "title": "Review pull requests",
+        "description": "Check and approve pending pull requests in the repository.",
+        "status": "completed",
+        "priority": "medium",
+        "dueDate": "2026-04-26",
+        "assignedTo": "Bob",
+        "tags": [
+            "development",
+            "code-review"
+        ],
+        "createdAt": "2026-04-24T14:30:00Z"
+    },
+    {
+        "id": "3",
+        "title": "Prepare meeting agenda",
+        "description": "Create and distribute the agenda for the weekly team meeting.",
+        "status": "pending",
+        "priority": "high",
+        "dueDate": "2026-04-28",
+        "assignedTo": "Charlie",
+        "tags": [
+            "meeting",
+            "planning"
+        ],
+        "createdAt": "2026-04-26T09:15:00Z"
+    },
+    {
+        "id": "4",
+        "title": "Update documentation",
+        "description": "Revise API documentation to include recent updates and fixes.",
+        "status": "in_progress",
+        "priority": "low",
+        "dueDate": "2026-05-02",
+        "assignedTo": "Diana",
+        "tags": [
+            "documentation",
+            "api"
+        ],
+        "createdAt": "2026-04-23T11:45:00Z"
+    },
+    {
+        "id": "5",
+        "title": "Email client feedback",
+        "description": "Send feedback summary and next steps to the client.",
+        "status": "completed",
+        "priority": "medium",
+        "dueDate": "2026-04-27",
+        "assignedTo": "Ethan",
+        "tags": [
+            "communication",
+            "client"
+        ],
+        "createdAt": "2026-04-22T16:20:00Z"
+    }
+]

@@ -1,0 +1,112 @@
+[
+  {
+    "id": 101,
+    "name": "Arif Ahmed",
+    "marks": {
+      "Math": 85,
+      "Physics": 78,
+      "English": 92
+    },
+    "total": 255,
+    "status": "Pass"
+  },
+  {
+    "id": 102,
+    "name": "Sara Kabir",
+    "marks": {
+      "Math": 92,
+      "Physics": 88,
+      "English": 95
+    },
+    "total": 275,
+    "status": "Pass"
+  },
+  {
+    "id": 103,
+    "name": "Tanvir Hasan",
+    "marks": {
+      "Math": 45,
+      "Physics": 52,
+      "English": 40
+    },
+    "total": 137,
+    "status": "Probation"
+  },
+  {
+    "id": 104,
+    "name": "Nabila Islam",
+    "marks": {
+      "Math": 76,
+      "Physics": 81,
+      "English": 84
+    },
+    "total": 241,
+    "status": "Pass"
+  },
+  {
+    "id": 105,
+    "name": "Rakib Hossain",
+    "marks": {
+      "Math": 68,
+      "Physics": 70,
+      "English": 72
+    },
+    "total": 210,
+    "status": "Pass"
+  },
+  {
+    "id": 106,
+    "name": "Maliha Chowdhury",
+    "marks": {
+      "Math": 98,
+      "Physics": 95,
+      "English": 97
+    },
+    "total": 290,
+    "status": "Pass"
+  },
+  {
+    "id": 107,
+    "name": "Zayan Malik",
+    "marks": {
+      "Math": 55,
+      "Physics": 60,
+      "English": 58
+    },
+    "total": 173,
+    "status": "Pass"
+  },
+  {
+    "id": 108,
+    "name": "Anika Tabassum",
+    "marks": {
+      "Math": 89,
+      "Physics": 84,
+      "English": 91
+    },
+    "total": 264,
+    "status": "Pass"
+  },
+  {
+    "id": 109,
+    "name": "Samiul Haque",
+    "marks": {
+      "Math": 35,
+      "Physics": 42,
+      "English": 38
+    },
+    "total": 115,
+    "status": "Fail"
+  },
+  {
+    "id": 110,
+    "name": "Ishrat Jahan",
+    "marks": {
+      "Math": 72,
+      "Physics": 75,
+      "English": 80
+    },
+    "total": 227,
+    "status": "Pass"
+  }
+]

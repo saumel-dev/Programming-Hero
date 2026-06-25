@@ -15,7 +15,6 @@ const Countries = ({ countriesPromise }) => {
         console.log('flags need to be added', flag);
         const newVisitedFlags = [...visitedFlags, flag];
         setVisitedFlags(newVisitedFlags);
-        
     }
     // console.log(countries);
     return (

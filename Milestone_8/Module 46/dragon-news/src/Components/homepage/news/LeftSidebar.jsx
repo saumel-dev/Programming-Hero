@@ -2,7 +2,7 @@ import Link from 'next/link';
 import React from 'react';
 
 const LeftSidebar = ({ categories, activeId }) => {
-    console.log('activeid', activeId, categories.category_id);
+    // console.log('activeid', activeId, categories.category_id);
     
     return (
         <div>
